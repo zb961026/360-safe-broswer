@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="description" content="">
+	<title> html </title>
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		/*body{overflow:hidden;}*/
+		/*header start*/
+		#bg {
+			width: 100%;
+			height: 100%;
+		}
+
+		#bg div {
+			width: 100%;
+			height: 100%;
+			background-position: center;
+			background-attachment: fixed;
+		}
+
+		#header {
+			width: 100%;
+			height: 47px;
+			position: fixed;
+			top: 25px;
+			left: 0;
+		}
+
+		#header .h-logo {
+			height: 47px;
+			margin-left: 50px;
+			float: left;
+		}
+
+		#header .h-nav {
+			height: 47px;
+			width: 400px;
+			float: right;
+			margin-right: 20px;
+			position: relative;
+		}
+
+		#header .h-nav ul {
+			height: 47px;
+			line-height: 47px;
+			z-index: 5;
+			position: relative;
+		}
+
+		#header .h-nav ul li {
+			list-style: none;
+			float: left;
+			margin: 0 20px;
+		}
+
+		#header .h-nav ul li a {
+			text-decoration: none;
+			color: #c2d5eb;
+		}
+
+		#header .h-nav ul li a.h-c {
+			color: #fff;
+			font-weight: bold;
+		}
+
+		#wrap {
+			width: 58px;
+			height: 28px;
+			border: 1px solid #fff;
+			border-radius: 12px;
+			position: absolute;
+			top: 8px;
+			left: 4px;
+			z-index: 3;
+		}
+
+		#slide {
+			width: 100px;
+			height: 270px;
+			position: fixed;
+			top: 30%;
+			left: 50px;
+			background: url("img/nav.png") no-repeat;
+		}
+
+		#slide ul {
+			padding-top: 6px;
+		}
+
+		#slide ul li {
+			list-style: none;
+			font-size: 12px;
+			font-family: "Microsoft yahei";
+			padding-left: 50px;
+			color: #fff;
+			height: 21px;
+			margin-bottom: 56px;
+			cursor: pointer;
+		}
+
+		#slide ul li.on {
+			background: url("img/nav_cho.png") no-repeat;
+		}
+		#slide .dom{
+			width: 150px;
+			height: 300px;
+			position: fixed;
+			top: 35%;
+			right: 50px;
+			text-align: center;
+			background-color: red;
+		}
+
+		/*header end*/
+
+		/*滚动条兼容*/
+		::-webkit-scrollbar {
+			width: 10px;
+			height: 6px;
+			background: #ccc;
+		}
+
+		::-webkit-scrollbar-button {
+			background-color: #e5e5e5;
+		}
+
+		::-webkit-scrollbar-track {
+			background: #999;
+		}
+
+		::-webkit-scrollbar-track-piece {
+			background: #ccc
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: #666;
+		}
+
+		::-webkit-scrollbar-corner {
+			background: #82AFFF;
+		}
+
+		::-webkit-scrollbar-resizer {
+			background: #FF0BEE;
+		}
+
+		scrollbar {
+			-moz-appearance: none !important;
+			background: rgb(0, 255, 0) !important;
+		}
+
+		scrollbarbutton {
+			-moz-appearance: none !important;
+			background-color: rgb(0, 0, 255) !important;
+		}
+
+		scrollbarbutton:hover {
+			-moz-appearance: none !important;
+			background-color: rgb(255, 0, 0) !important;
+		}
+	</style>
+</head>
+
+<body>
+	<!--header start-->
+	<div id="header">
+		<div class="h-logo">
+			<img src="img/logo.png" />
+		</div>
+		<div class="h-nav">
+			<ul>
+				<li><a href="#" class="h-c">首页</a></li>
+				<li><a href="#">常见问题</a></li>
+				<li><a href="#">论坛</a></li>
+				<li><a href="#">360首页>></a></li>
+			</ul>
+			<div id="wrap"></div>
+		</div>
+		<div id="slide">
+			<ul>
+				<li class="on">安全换机</li>
+				<li>无网对传</li>
+				<li>隐私粉碎</li>
+				<li>一键转移</li>
+			</ul>
+			<div class="dom" style="background: transparent;">
+				<img src="http://p7.qhimg.com/d/inn/959151e1/ercode.png" width="150px"alt="">
+			<div class="btn" style="color: #fff;font-size: 25px;">下载到手机</div>
+		</div>
+		</div>
+	</div>
+	<div id="bg">
+		<div style="background-image:url(img/1.jpg);">
+			<p style="position: absolute;top:8%;left:35%;color:#fff;font-size:48px;z-index: 9;">资料转移 隐私粉碎 手机回收<br>换手机必备</p>
+			<div class="pic" style="background-image:url(http://p1.qhimg.com/d/inn/cd884077/1.png);background-repeat: no-repeat;background-size:40%;"></div>
+		</div>
+		<div style="background-image:url(img/2.jpg);">
+			<p style="position: absolute;top:105%;left:35%;color:#fff;font-size:48px;z-index: 9;">无需联网<br>手机资料直接对传，安全快捷<br><em style="font-size: 18px;padding-top: 10px;">点对点私密网络，无需上传，保护隐私安全，使用WiFi-Direct技术，换机场景快速传输</em></p>
+			<div class="pic" style="background-image:url(http://p1.qhimg.com/d/inn/2974a127/2.png);background-repeat: no-repeat;background-size: 38%;"></div>
+		</div>
+		<div style="background-image:url(img/3.jpg);">
+			<p style="position: absolute;top:207%;left:35%;color:#fff;font-size:48px;z-index: 9;">隐私粉碎器<br>彻底销毁隐私数据，避免人财两失<br><em style="font-size: 18px">推出防恢复的数据粉碎功能，全盘擦除隐私资料，保障安全</em></p> -->
+			<div class="pic" style="background-image:url(http://p1.qhimg.com/d/inn/b8261ff5/3.png);background-repeat: no-repeat;background-size: 38%;"></div>
+		</div>
+		<div style="background-image:url(img/4.jpg);">
+			<p style="position: absolute;top:312%;left:32%;color:#fff;font-size:48px;z-index: 9;">九大类资料一键转移<br>还支持连接过的WiFi热点</p>
+			<div class="pic" style="background-image:url(http://p1.qhimg.com/d/inn/d5443a65/4.png);background-repeat: no-repeat;background-size: 38%;"></div>
+		</div>
+	</div>
+	<!--header end-->
+
+	<!--引入js官方类库jQuery-->
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script>
+		$(function () {
+			var $navLi = $("#header .h-nav ul li");//获取头部li
+			var $navUl = $("#header .h-nav ul");//获取ul
+			var $wrap = $("#wrap");//获取div容器
+			var $slideLi = $("#slide ul li");//获取左侧li
+
+			//解决缓存问题
+			var timer = setInterval(function () {//定时器延时
+				$(document).scrollTop(0);
+				if ($(document).scrollTop() == 0) {//判断滚动高度为0
+					clearInterval(timer);//清除定时器
+				}
+			}, 50);
+			//鼠标移入事件
+			$navLi.mouseenter(function () {
+				//找到当前this的a添加类样式，在它的父元素找到a，清除类样式
+				$(this).find("a").addClass("h-c").parent().siblings().find("a").removeClass("h-c");
+				//获取当前this距离左边位置
+				var Left = $(this).position().left;
+				//获取当前this的宽度
+				var Width = $(this).width();
+				//鼠标停止才执行动画
+				$wrap.stop(true, true).animate({
+					left: Left + 4,//左边走过距离Left+4(li到ul的距离)
+					width: Width + 26//宽度走过距离Width + 26(动态边框的宽度-li的宽度)
+				}, 300);
+			});
+			//鼠标离开ul的时候
+			$navUl.mouseleave(function () {
+				//找到当前this中的a删除类样式
+				$(this).find("a").removeClass("h-c");
+				//$(this).find("li").eq(0).find("a").addClass("h-c");
+				//找到当前this中的第一个元素中的a，添加类样式
+				$(this).find("li:first-child a").addClass("h-c");
+				//停下执行动画
+				$wrap.stop(true, true).animate({
+					left: 4,//返回没有添加距离的初始位置
+					width: 58//返回没有添加距离的初始位置
+				});
+			});
+			//鼠标点击slide下面li的时候
+			var winH = $(window).height();//获取高度
+			var index = 0;//定义一个索引
+			$slideLi.click(function () {//点击事件
+				index = $(this).index();//获取当前的索引
+				$(this).addClass("on").siblings().removeClass("on");//当前添加类样式，其他移除类样式
+				$("html,body").animate({//滚动距离动画
+					"scrollTop": winH * index//滚动距离为高度*索引
+				},0);
+			});
+
+			//鼠标滚轮事件
+			$(document).mousewheel(function () {
+				var dr = arguments[1];
+				if (dr < 0) {
+					index++; //0,1,2,3
+					index %= 4;
+				} else {
+					index--;
+					if (index < 0) index = 3;
+				}
+				$slideLi.eq(index).addClass("on").siblings().removeClass("on");
+				$("html,body").stop(true).animate({
+					"scrollTop": winH * index
+				},10);
+			});
+
+			//页面窗口改变高度
+			$(window).resize(function () {
+				winH = $(window).height();
+				$(document).scrollTop(winH * index);
+			});
+		});
+	</script>
+</body>
+
+</html>
