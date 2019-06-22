@@ -49,7 +49,6 @@
 					"scrollTop": winH * index //滚动距离为高度*索引
 				}, 1000);
 			});
-
 			//鼠标滚轮事件
 			$(document).mousewheel(function () {
 				var dr = arguments[1];
